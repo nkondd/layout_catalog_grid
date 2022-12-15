@@ -1,0 +1,19 @@
+.catalog {
+  display: grid;
+  gap: 48px;
+  justify-content: center;
+
+  @include media (488px, 2);
+  @include media (768px, 3);
+  @include media (1024px, 4);
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $card-width;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
